@@ -370,7 +370,8 @@ a {
 .category .cat_container .cat_box .cat_title {
   font-size: 1.3em;
   font-weight: 400;
-  margin: 12px 0;
+  margin: 32px 0 24px 0;
+  text-transform: uppercase;
 }
 .category .cat_container .cat_box .cat_detail {
   font-size: 0.9rem;

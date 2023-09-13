@@ -391,4 +391,17 @@ a {
 }
 .category .cat_container .cat_box .cat_btn:hover {
   color: red;
+}
+
+@media (min-width: 1259px) {
+  .blog {
+    width: 100%;
+  }
+  .blog .blog_container {
+    margin: 0 4em;
+  }
+  .category .cat_container .cat_box {
+    height: 40vh;
+    width: 15vw;
+  }
 }/*# sourceMappingURL=style.css.map */

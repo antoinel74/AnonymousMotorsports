@@ -265,3 +265,20 @@ a {
     }
   }
 }
+
+@media (min-width: 1259px) {
+  .blog {
+    width: 100%;
+    .blog_container {
+      margin: 0 4em;
+    }
+  }
+  .category {
+    .cat_container {
+      .cat_box {
+        height: 40vh;
+        width: 15vw;
+      }
+    }
+  }
+}

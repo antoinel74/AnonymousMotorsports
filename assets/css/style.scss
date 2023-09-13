@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-color: rgba(25, 23, 23);
+  background-color: black;
 }
 
 li {
@@ -84,7 +84,7 @@ a {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: rgba(25, 23, 23, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     text-align: center;
     transition: 0.4s;
@@ -129,14 +129,14 @@ a {
     color: white;
     z-index: 100;
     .text {
-      font-weight: 200;
+      font-weight: 300;
       font-size: 1rem;
       text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     }
     .slider_title {
-      font-weight: 600;
+      font-weight: 400;
       font-size: 4rem;
-      margin-top: 8px;
+      line-height: 1;
     }
     .slider_btn {
       display: inline-block;
@@ -154,7 +154,8 @@ a {
 
 .section_title {
   font-size: 2rem;
-  padding-top: 1em;
+  font-weight: 300;
+  padding: 2em 0;
   text-align: center;
 }
 
@@ -167,6 +168,7 @@ a {
     gap: 1.2em;
     .blog_box {
       color: black;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
     .blog_title {
       text-transform: uppercase;
@@ -180,13 +182,84 @@ a {
     }
     .blog_img {
       transition: 0.4s ease-in;
-      object-fit: cover;
+      object-fit: fill;
+      display: flex;
       &:hover {
         -webkit-transform: scale(1.05);
         transform: scale(1.05);
       }
       img {
         width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .blog {
+    width: 100%;
+    .blog_container {
+      margin: 0 4em;
+    }
+  }
+}
+
+.category {
+  color: white;
+  background-color: black;
+  margin-top: 3em;
+  padding-bottom: 200px;
+  .cat_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 24px;
+    .cat_box {
+      display: flex;
+      color: black;
+      height: 300px;
+      width: 300px;
+      background-color: white;
+      padding: 24px 24px;
+      border-radius: 5px;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 12px 12px;
+      .fa-solid {
+        font-size: 2em;
+        text-align: center;
+        transition: 0.3s ease-in;
+      }
+      .fa-arrow-right {
+        font-size: 1em;
+        padding-left: 0.5em;
+      }
+      .cat_title {
+        font-size: 1.3em;
+        font-weight: 400;
+        margin: 12px 0;
+      }
+      .cat_detail {
+        font-size: 0.9rem;
+        font-weight: 200;
+        margin: 8px 24px;
+        text-align: justify;
+      }
+      .cat_btn {
+        background: black;
+        border: none;
+        font-size: 1em;
+        color: white;
+        padding: 12px 12px;
+        margin: 12px 0;
+        border-radius: 3px;
+        animation: 1s ease-in;
+        &:hover {
+          color: red;
+        }
       }
     }
   }
